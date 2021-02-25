@@ -118,6 +118,9 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+#Generated javascript build files
+build
+
 ### vscode ###
 .vscode/*
 !.vscode/settings.json
