@@ -8,6 +8,7 @@
     "watch": "yarn build -w",
     "start": "node --require dotenv/config build/index.js",
     "dev": "nodemon --exec yarn start",
+    "create:migration": "mikro-orm migration:create",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -49,6 +50,7 @@
     "@mikro-orm/core": "^4.4.4",
     "@mikro-orm/postgresql": "^4.4.4",
     "apollo-server-express": "^2.21.0",
+    "argon2": "^0.27.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "graphql": "^15.5.0",
