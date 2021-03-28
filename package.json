@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf build/ && tsc",
+    "prebuild": "npx rimraf build/",
+    "build": "tsc",
     "watch": "yarn build -w",
     "start": "node --require dotenv/config build/index.js",
     "dev": "nodemon --exec yarn start",
